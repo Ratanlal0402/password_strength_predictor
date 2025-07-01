@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+html {
+    font-size: 10px;
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    background: linear-gradient(to right, #f0f2f0, #000c40);
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    width: 50rem;
+    text-align: left;
+    margin-left: 20rem;
+}
+
+h1 {
+    color: cadetblue;
+    font-size: 5rem;
+    font-weight: 1000;
+}
+
+form {
+    background-color: rgb(64, 117, 135);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input[type="text"] {
+    width: 28rem;
+    font-size: medium;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: rgb(25, 75, 75);
+    background-color: #cdcffb;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4c70af;
+    outline: none;
+}
+
+button {
+    width: 30rem;
+    font-size: medium;
+    padding: 15px;
+    background: linear-gradient(to right, #de6161, #2657eb);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgba(222, 97, 97, 0.7), rgba(38, 87, 235, 0.6));
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 20px;
+    width: 30rem;
+    text-align: center;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    border-radius: 8px;
+}
+
+@media (max-width: 40rem) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    button {
+        font-size: 16px;
+    }
+}
